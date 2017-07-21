@@ -2,9 +2,151 @@
 <html>
 <head>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-size: 16px;
+            position: absolute;
+        }
+
+        #MainSection {
+            padding: 1% 2%;
+            background: greenyellow;
+        }
+
+        .list {
+            padding: 0;
+        }
+
+        #baselist li {
+            display: inline-block;
+            border-right: 0.1em solid black;
+            padding-right: 0.5em;
+        }
+
+            #baselist li:last-child {
+                border-right: hidden;
+            }
+
+        #header {
+            position: relative;
+            height: 10%;
+            background: yellow;
+        }
+
+        .yellowLibertyLogo {
+            position: absolute;
+            height: 100%;
+        }
+
+        .rightAlignment {
+            text-align: right;
+        }
+
+        .wrap {
+            width: 100%;
+            overflow: auto;
+            margin: 1em 0em;
+        }
+
+        .leftSection {
+            float: left;
+            width: 15%;
+        }
+
+        .middleSection {
+            float: left;
+            width: 60%;
+        }
+
+        .endSection {
+            float: right;
+            width: 25%;
+        }
+
+        .slider {
+            width: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .listclass {
+            display: flex;
+            align-items: center;
+            height: 3.5em;
+        }
+
+        #mainlist {
+            padding: 0px;
+        }
+
+        p {
+            margin-left: 1em;
+        }
+
+        .box {
+            float: left;
+        }
+
+        #copyright {
+            width: 80%;
+        }
+
+        #intro {
+            width: 20%;
+        }
+    </style>
 </head>
 <body>
-
+    <section id="MainSection">
+        <div id="header">
+            <img src="../../images/home/Logo.png" alt="Logo" class="yellowLibertyLogo">
+            <ul id="baselist" class="rightAlignment">
+                <li>Login</li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+        <div id="content" class="wrap">
+            <div id="sideMenu" class="leftSection" style="background: lightblue">
+                <ul id="mainlist">
+                    <li class="listclass"><img src="../../images/home/pencil.png"><p>Menu1</p></li>
+                    <li class="listclass"><img src="../../images/home/pencil.png"><p>Menu1</p></li>
+                    <li class="listclass"><img src="../../images/home/pencil.png"><p>Menu1</p></li>
+                    <li class="listclass"><img src="../../images/home/pencil.png"><p>Menu1</p></li>
+                    <li>
+                        <ul>
+                            <li class="listclass"><img src="../../images/home/pencil.png"><p>Menu1</p></li>
+                            <li class="listclass"><img src="../../images/home/pencil.png"><p>Menu1</p></li>
+                            <li class="listclass"><img src="../../images/home/pencil.png"><p>Menu1</p></li>
+                        </ul>
+                    </li>
+                    <li class="listclass"><img src="../../images/home/pencil.png"><p>Menu1</p></li>
+                    <li class="listclass"><img src="../../images/home/pencil.png"><p>Menu1</p></li>
+                </ul>
+            </div>
+            <div id="centerDiv" class="middleSection" style="background: lightgray">
+                <img src="../../images/home/Slider/1.jpg" alt="SliderImage" class="slider" style="height: 40%">
+                <div style="padding: 1em; height: 60%">
+                    Our lean digital production workflow systems, strong QA bench strength and emphasis on multiple levels of validations and checks have helped us deliver value for many years.
+                    Many of our partners have welcomed us into their homes. Their trust in us is evident from the fact that more than 30 members of the Reality family are working onsite with our clients.
+                    Cost savings not only arise due to lower rates, but also due to our constant commitment to efficiency. We handle large volumes efficiently by optimizing our workflows to avoid any rework.
+                    We are amongst the first in India to introduce multimedia CD ROMs, first to start a digital agency for stock photos, first to manage numerous eNewspapers, first to introduce Augmented Reality for books and many more.
+                    Our infrastructure allows our client business continuity even in the case of unforeseeable emergencies. All our production facilities provide 24/7 backup to each other.
+                </div>
+            </div>
+            <div id="addDiv" class="endSection" style="background: lightpink">
+                ghkjisjsjfsjdf
+            </div>
+        </div>
+        <div id="footer" style="background-color: brown">
+            <div id="copyright" class="box">@copyright</div>
+            <div id="intro" class="box">Developed by Meera</div>
+        </div>
+        <div style="clear:both;"></div>
+    </section>
 </body>
 </html>
